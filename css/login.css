@@ -1,0 +1,234 @@
+*{
+    font-family: calibri;
+    line-height: 1.5;
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+.bg-zig-zag{
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2300af9b'/%3E%3Cstop offset='1' stop-color='%2300d769'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(289,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23780096'/%3E%3Cstop offset='1' stop-color='%23ff007e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='2'%3E%3Cpath d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='4' transform='' cx='500' cy='100' r='40'/%3E%3Cpath transform='' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='4'%3E%3Cpath transform='' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='8' transform='' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.card-signin {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-signin .card-title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 3rem;
+    color: #00897b;
+  }
+  
+  .card-signin .card-body {
+    padding: 2rem;
+  }
+  .form-control{
+    height: calc(1.5em + .75rem + 2px)!important;
+    padding: .375rem .75rem !important;
+  }
+  
+  .form-signin {
+    width: 100%;
+  }
+  
+  .form-signin .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s;
+  }
+  
+  .form-label-group {
+    position: relative;
+    margin-bottom: 1rem;    
+  }
+  
+  .form-label-group input {
+    height: auto;
+    border-radius: 2rem;
+  }
+  
+  .form-label-group>input,
+  .form-label-group>label {
+    padding: var(--input-padding-y) var(--input-padding-x);
+  }
+  
+  .form-label-group>label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    /* Override default `<label>` margin */
+    line-height: 1.5;
+    color: #495057;
+    border: 2px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+    margin-left: 12px;
+  }
+  
+  .form-label-group input::-webkit-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input:-ms-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::-ms-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::-moz-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input:not(:placeholder-shown) {
+    padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+    padding-bottom: calc(var(--input-padding-y) / 3);
+  }
+  
+  .form-label-group input:not(:placeholder-shown)~label {
+    padding-top: calc(var(--input-padding-y) / 3);
+    padding-bottom: calc(var(--input-padding-y) / 3);
+    font-size: 10px;
+    color: #777;
+    margin-left: 12px;
+  }
+  
+  .btn-google {
+    color: white;
+    background-color: #ea4335;
+  }
+  
+  .btn-facebook {
+    color: white;
+    background-color: #3b5998;
+  }
+  
+  /* Fallback for Edge
+  -------------------------------------------------- */
+  
+  @supports (-ms-ime-align: auto) {
+    .form-label-group>label {
+      display: none;
+    }
+    .form-label-group input::-ms-input-placeholder {
+      color: #777;
+    }
+  }
+  
+  /* Fallback for IE
+  -------------------------------------------------- */
+  
+  @media all and (-ms-high-contrast: none),
+  (-ms-high-contrast: active) {
+    .form-label-group>label {
+      display: none;
+    }
+    .form-label-group input:-ms-input-placeholder {
+      color: #777;
+    }
+  }
+  .login100-form-logo {
+    font-size: 60px;
+    color: #333333;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.form-control:focus{
+    border-color: #00af9b;
+    box-shadow: 0 0 0 0.2rem rgba(0,175,155,.25);
+}
+.login100-form-avatar {
+    width: 150px;
+    height: 150px;    
+    overflow: hidden;
+    margin: 0 auto;
+}
+.glow-on-hover {
+    
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff !important;
+    background: #00AF9B;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #780096,#FF0082,#00AF9B, #00D769, #FF5C00);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #fff;
+    font-weight: bold;
+    
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00AF9B;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+

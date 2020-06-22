@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Contract</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- datatable -->
+    <link rel="stylesheet" href="../css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../css/fixedHeader.bootstrap4.min.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">    
+    <!-- Font Awesome JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"></script>    
+</head>
+<body>
+  
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="shadow">
+            <div class="sidebar-header">
+                <h3 class="font-weight-bold text-center">CLM</h3>
+            </div>      
+    
+            <ul class="list-unstyled components">               
+                <li class="active">
+                    <a href="#"><i class="fas fa-tachometer-alt mr-2"></i> Dasboard</a>
+                </li>
+                <li>
+                    <a href="#contracts" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-file mr-2"></i> Contracts</a>
+                    <ul class="collapse list-unstyled" id="contracts">
+                        <li>
+                            <a href="#">Repository</a>
+                        </li>
+                        <li>
+                            <a href="#">Create Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Review Contract</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Template</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-search mr-2"></i>Search Index</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-flag mr-2"></i>Reports</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-dollar-sign mr-2"></i>Bonus and Penalties</a>
+                </li>
+                <li>
+                    <a href="#admin" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-user-cog mr-2"></i>Admin</a>
+                    <ul class="collapse list-unstyled" id="admin">
+                        <li>
+                            <a href="#">Users</a>
+                        </li>
+                        <li>
+                            <a href="#">Need Access</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Account</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Clause</a>
+                        </li>
+                        <li>
+                            <a href="#">Email Notification</a>
+                        </li>
+                    </ul>
+                </li>                
+            </ul>
+            
+        </nav>
+    
+        <!-- Page Content  -->
+        <div id="content" class="main-content">
+          <nav class="navbar navbar-top navbar-expand-md navbar-dark fixed-top">
+            <div class="container-fluid">
+              <!-- Brand -->
+              <button type="button" id="sidebarCollapse" class="btn btn-outline-info">
+                <i class="fas fa-align-left"></i> <a class="h5 mb-0 text-white d-none d-lg-inline-block">Review Contract</a>                   
+              </button>
+              <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-align-justify"></i>
+              </button>
+              
+              <!-- Form -->
+              
+              <!-- User -->
+              <ul class="navbar-nav align-items-center d-none d-md-flex">
+                <li class="nav-item dropdown">
+                  <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="media align-items-center">
+                      <span class="avatar avatar-sm rounded-circle">
+                        <i class="fa fa-user-circle text-white"></i>
+                      </span>
+                      <div class="media-body ml-2 d-none d-lg-block">
+                        <span class="mb-0 text-sm  font-weight-bold text-white">Welcome, Shane</span>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+                    <div class=" dropdown-header noti-title">
+                      <h6 class="text-overflow m-0">Welcome!</h6>
+                    </div>
+                    <a href="#" class="dropdown-item">
+                      <i class="ni ni-single-02"></i>
+                      <span>My profile</span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                      <i class="ni ni-settings-gear-65"></i>
+                      <span>Settings</span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                      <i class="ni ni-calendar-grid-58"></i>
+                      <span>Activity</span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                      <i class="ni ni-support-16"></i>
+                      <span>Support</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#!" class="dropdown-item">
+                      <i class="ni ni-user-run"></i>
+                      <span>Logout</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    
+          <div class="header bg-gradient-frontier pb-8 pt-5 pt-md-8">
+            <div class="container-fluid">
+              <div class="header-body">
+             
+              </div>
+            </div>
+          </div>
+    
+          <div class="container-fluid mt--7">
+              <div class="row mt-5 mb-4">
+                  <div class="col-sm-3 ol-md-3 col-3">
+                    <div class="accordion shadow" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header">
+                                Status: <b>Draft</b>
+                            </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Contract Summary
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        Contract Title:
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="text-left font-weight-bold">Sample SOW for 2020</p>                                        
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                               Document Properties
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Contract Comments
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                  Contract Version History
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                              <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-8 col-md-8 col-8">
+                      <div class="card shadow">
+                          <div class="card-header">
+                            <h5 class="text-frontier text-uppercase text-muted mb-0">Review Contract</h5>  
+                          </div>
+                          <div class="card-body" style="height: 35em;">
+
+                          </div>
+                      </div>
+                  </div>
+              </div>            
+          </div>
+            
+        </div>
+      </div>
+
+
+    <script src="../js/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- datatable -->
+    <script src="../js/jquery.dataTables.min.js"></script>
+    <script src="../js/dataTables.bootstrap4.min.js"></script>
+    <script src="../js/dataTables.fixedHeader.min.js"></script>
+    <!-- chart -->
+    <script src="../js/Chart.min.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/chart.js"></script>
+</body>
+</html>

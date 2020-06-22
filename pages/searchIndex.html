@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Index</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- datatable -->
+    <link rel="stylesheet" href="../css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../css/fixedHeader.bootstrap4.min.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">    
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"></script>    
+</head>
+<body>
+  
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="shadow">
+            <div class="sidebar-header">
+                <h3 class="font-weight-bold text-center">CLM</h3>
+            </div>      
+    
+            <ul class="list-unstyled components">               
+                <li class="">
+                    <a href="index.html"><i class="fas fa-tachometer-alt mr-2"></i> Dasboard</a>
+                </li>
+                <li>
+                    <a href="#contracts" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-file mr-2"></i> Contracts</a>
+                    <ul class="collapse list-unstyled" id="contracts">
+                        <li>
+                            <a href="repository.html">Repository</a>
+                        </li>
+                        <li>
+                            <a href="createContract.html">Create Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Review Contract</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Template</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="searchIndex.html"><i class="fas fa-search mr-2"></i>Search Index</a>
+                </li>
+                <li>
+                    <a href="reports.html"><i class="fas fa-flag mr-2"></i>Reports</a>
+                </li>
+                <li>
+                    <a href="bonusAndPenalties.html"><i class="fa fa-dollar-sign mr-2"></i>Bonus and Penalties</a>
+                </li>
+                <li>
+                    <a href="#admin" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-user-cog mr-2"></i>Admin</a>
+                    <ul class="collapse list-unstyled" id="admin">
+                        <li>
+                            <a href="users.html">Users</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#">Need Access</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Account</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Clause</a>
+                        </li>
+                        <li>
+                            <a href="#">Email Notification</a>
+                        </li> -->
+                    </ul>
+                </li>                
+            </ul>
+            
+        </nav>
+    
+        <!-- Page Content  -->
+        <div id="content" class="main-content">
+          <nav class="navbar navbar-top navbar-expand-md navbar-dark fixed-top">
+            <div class="container-fluid">
+              <!-- Brand -->
+              <button type="button" id="sidebarCollapse" class="btn btn-outline-info">
+                <i class="fas fa-align-left"></i> <a class="h5 mb-0 text-white d-none d-lg-inline-block">Search Index</a>                   
+              </button>
+              <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-align-justify"></i>
+              </button>
+              
+              <!-- Form -->
+              
+              <!-- User -->
+              <ul class="navbar-nav align-items-center d-none d-md-flex">
+                <li class="nav-item dropdown">
+                  <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="media align-items-center">
+                      <span class="avatar avatar-sm rounded-circle">
+                        <i class="fa fa-user-circle text-white"></i>
+                      </span>
+                      <div class="media-body ml-2 d-none d-lg-block">
+                        <span class="mb-0 text-sm  font-weight-bold text-white">Welcome, Shane</span>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+                    <div class=" dropdown-header noti-title">
+                      <h6 class="text-overflow m-0">Welcome!</h6>
+                    </div>
+                    <a href="#" class="dropdown-item">
+                      <i class="ni ni-single-02"></i>
+                      <span>My profile</span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                      <i class="ni ni-settings-gear-65"></i>
+                      <span>Settings</span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                      <i class="ni ni-calendar-grid-58"></i>
+                      <span>Activity</span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                      <i class="ni ni-support-16"></i>
+                      <span>Support</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#!" class="dropdown-item">
+                      <i class="ni ni-user-run"></i>
+                      <span>Logout</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    
+          <div class="header bg-gradient-frontier pb-8 pt-5 pt-md-8">
+            <div class="container-fluid">
+              <div class="header-body">
+             
+              </div>
+            </div>
+          </div>
+    
+          <div class="container-fluid mt--7">
+              <div class="row">
+                  <div class="container-fluid">
+                      <div class="card shadow">
+                            <div class="card-body">
+                                <div class="mb-4 pb-2 btn-group" role="group" aria-label="Button group with nested dropdown">                              
+                                    <div class="btn-group" role="group">
+                                        <button id="btnGroupDrop1" type="button" class="btn btn-outline-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Vertical
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                            <a class="dropdown-item" href="#">Dropdown link</a>
+                                            <a class="dropdown-item" href="#">Dropdown link</a>
+                                        </div>                                    
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button id="btnGroupDrop1" type="button" class="btn btn-outline-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        KPI
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                        </div>                                        
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button id="btnGroupDrop1" type="button" class="btn btn-outline-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Market
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                        </div>                                        
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button id="btnGroupDrop1" type="button" class="btn btn-outline-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Billing Type
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                        </div>                                        
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button id="btnGroupDrop1" type="button" class="btn btn-outline-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Support Geo
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                        </div>                                        
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button id="btnGroupDrop1" type="button" class="btn btn-outline-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Support Category
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                        </div>                                        
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button id="btnGroupDrop1" type="button" class="btn btn-outline-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Support Channel
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                        </div>                                        
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button id="btnGroupDrop1" type="button" class="btn btn-outline-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Seat Sharing
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                        </div>                                        
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button id="btnGroupDrop1" type="button" class="btn btn-outline-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Shift Type
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <button class="btn btn-success float-right">Generate</button>
+                                
+                                <table id="searchIndex" class="table table-sm table-striped table-bordered" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>File</th>
+                                            <th>Uploader</th>
+                                            <th>Account Name</th>
+                                            <th>Latest Upload</th>
+                                            <th>Expiration Date</th>                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Garrett Winters</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td>63</td>
+                                            <td>2011/07/25</td>                                           
+                                        </tr>
+                                        <tr>
+                                            <td>Ashton Cox</td>
+                                            <td>Junior Technical Author</td>
+                                            <td>San Francisco</td>
+                                            <td>66</td>
+                                            <td>2009/01/12</td>                                         
+                                        </tr>
+                                        <tr>
+                                            <td>Cedric Kelly</td>
+                                            <td>Senior Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td>2012/03/29</td>                                        
+                                        </tr>
+                                        <tr>
+                                            <td>Airi Satou</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td>33</td>
+                                            <td>2008/11/28</td>                                           
+                                        </tr>
+                                        <tr>
+                                            <td>Brielle Williamson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>New York</td>
+                                            <td>61</td>
+                                            <td>2012/12/02</td>                                           
+                                        </tr>
+                                        <tr>
+                                            <td>Herrod Chandler</td>
+                                            <td>Sales Assistant</td>
+                                            <td>San Francisco</td>
+                                            <td>59</td>
+                                            <td>2012/08/06</td>                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Rhona Davidson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>Tokyo</td>
+                                            <td>55</td>
+                                            <td>2010/10/14</td>                                           
+                                        </tr>
+                                        <tr>
+                                            <td>Colleen Hurst</td>
+                                            <td>Javascript Developer</td>
+                                            <td>San Francisco</td>
+                                            <td>39</td>
+                                            <td>2009/09/15</td>                                           
+                                        </tr>
+                                        <tr>
+                                            <td>Sonya Frost</td>
+                                            <td>Software Engineer</td>
+                                            <td>Edinburgh</td>
+                                            <td>23</td>
+                                            <td>2008/12/13</td>                                          
+                                        </tr>
+                                        <tr>
+                                            <td>Jena Gaines</td>
+                                            <td>Office Manager</td>
+                                            <td>London</td>
+                                            <td>30</td>
+                                            <td>2008/12/19</td>                                           
+                                        </tr>
+                                        <tr>
+                                            <td>Quinn Flynn</td>
+                                            <td>Support Lead</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td>2013/03/03</td>                                           
+                                        </tr>
+                                        <tr>
+                                            <td>Charde Marshall</td>
+                                            <td>Regional Director</td>
+                                            <td>San Francisco</td>
+                                            <td>36</td>
+                                            <td>2008/10/16</td>                                           
+                                        </tr>
+                                        <tr>
+                                            <td>Haley Kennedy</td>
+                                            <td>Senior Marketing Designer</td>
+                                            <td>London</td>
+                                            <td>43</td>
+                                            <td>2012/12/18</td>                                          
+                                        </tr>
+                                        <tr>
+                                            <td>Tatyana Fitzpatrick</td>
+                                            <td>Regional Director</td>
+                                            <td>London</td>
+                                            <td>19</td>
+                                            <td>2010/03/17</td>                                           
+                                        </tr>
+                                        <tr>
+                                            <td>Michael Silva</td>
+                                            <td>Marketing Designer</td>
+                                            <td>London</td>
+                                            <td>66</td>
+                                            <td>2012/11/27</td>                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Paul Byrd</td>
+                                            <td>Chief Financial Officer (CFO)</td>
+                                            <td>New York</td>
+                                            <td>64</td>
+                                            <td>2010/06/09</td>                                           
+                                        </tr>
+                                        <tr>
+                                            <td>Gloria Little</td>
+                                            <td>Systems Administrator</td>
+                                            <td>New York</td>
+                                            <td>59</td>
+                                            <td>2009/04/10</td>                                        
+                                        </tr>
+                                        <tr>
+                                            <td>Bradley Greer</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td>41</td>
+                                            <td>2012/10/13</td>                                            
+                                        </tr>                                       
+                                        <tr>
+                                            <td>Shad Decker</td>
+                                            <td>Regional Director</td>
+                                            <td>Edinburgh</td>
+                                            <td>51</td>
+                                            <td>2008/11/13</td>                                        
+                                        </tr>
+                                        <tr>
+                                            <td>Michael Bruce</td>
+                                            <td>Javascript Developer</td>
+                                            <td>Singapore</td>
+                                            <td>29</td>
+                                            <td>2011/06/27</td>                                           
+                                        </tr>
+                                        <tr>
+                                            <td>Donna Snider</td>
+                                            <td>Customer Support</td>
+                                            <td>New York</td>
+                                            <td>27</td>
+                                            <td>2011/01/25</td>                                          
+                                        </tr>
+                                    </tbody>                                   
+                                  </table> 
+                            </div>
+                      </div>
+                  </div>
+              </div>
+            
+            
+          </div>
+            
+        </div>
+      </div>
+
+
+    <script src="../js/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- datatable -->
+    <script src="../js/jquery.dataTables.min.js"></script>
+    <script src="../js/dataTables.bootstrap4.min.js"></script>
+    <script src="../js/dataTables.fixedHeader.min.js"></script>
+    <!-- chart -->
+    <script src="../js/Chart.min.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../js/app.js"></script>    
+    <script src="../js/chart.js"></script>
+</body>
+</html>
